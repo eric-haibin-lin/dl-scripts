@@ -1,8 +1,8 @@
-FROM ubuntu:16.04
+FROM ubuntu:14.04
 
 WORKDIR /build
 
-ARG S3_PREFIX=https://s3-us-west-2.amazonaws.com/mxnet-python-packages-gcc5/mxnet-deps-lib/1604
+ARG S3_PREFIX=https://s3-us-west-2.amazonaws.com/mxnet-python-packages-gcc5/mxnet-deps-lib/1404
 
 # Install required libraries
 RUN apt-get update && apt-get install -y \
